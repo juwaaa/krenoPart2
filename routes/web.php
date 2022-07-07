@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller;
+use app\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +25,4 @@ Route::get('/add-employee',[EmployeesController::class,'create']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [app\Http\Controllers\HomeController::class, 'index'])->name('home');
