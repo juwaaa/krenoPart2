@@ -2,6 +2,9 @@
 
 @section('content')
     <div id="app">
-        Test
+        <employee-form>
+            scope="{{$scope}}"
+            :id="{{$id ?? 0}}"
+        </employee-form>
     </div>
-@endsection
+@endsection 
