@@ -22,7 +22,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/add-employee',[EmployeesController::class,'create']);
-
+Route::post('save-employee', [EmployeesController::class, 'store']);
 Auth::routes();
 
 Route::get('/home', [app\Http\Controllers\HomeController::class, 'index'])->name('home');

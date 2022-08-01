@@ -9,6 +9,7 @@ import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import { store } from './store/index.js';
 
 window.Vue = require('vue').default;
 Vue.use(ElementUI);
@@ -23,5 +24,6 @@ Vue.component('employee-form', require('./components/employee/EmployeeForm.vue')
  */
 
 const app = new Vue({
+    store, //parse store
     el: '#app',
 });

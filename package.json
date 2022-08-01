@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "autoprefixer": "10.4.5",
-        "element-ui": "^2.15.9"
+        "element-ui": "^2.15.9",
+        "vuex": "^4.0.2"
     }
 }
